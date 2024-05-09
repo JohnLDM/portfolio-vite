@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section id="carousel">
     <!-- <ul>
       <li v-for="technology in technologies">
         <div class="cont-img">
