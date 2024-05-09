@@ -10,7 +10,7 @@ export default {
 
 <template>
   <section class="jumbotron px-0">
-    <div class="cont-text border border-danger text-uppercase">
+    <div class="cont-text text-uppercase">
       <h3 class="text-center">Hello! I'm</h3>
       <h1 class="m-0">
         John H.<br />
@@ -18,7 +18,7 @@ export default {
       </h1>
     </div>
 
-    <div class="col-10 border d-flex justify-content-end pt-5">
+    <div class="col-10 d-flex justify-content-end pt-5">
       <h4 class="m-0">Jr Full Stack Web Developer</h4>
     </div>
   </section>
@@ -29,7 +29,6 @@ export default {
 
 .jumbotron {
   background-color: var(--custom-primary);
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
