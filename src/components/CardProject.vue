@@ -78,15 +78,13 @@ export default {
     width: 40%;
 
     h3 {
-      border: 1px solid green;
       font-size: clamp(12px, 3vw, 40px);
       font-weight: 800;
-      padding: clamp(8px, 3vw, 20px) 0 clamp(5px, 2vw, 20px);
+      padding: clamp(8px, 3vw, 20px) 0 clamp(5px, 1.5vw, 20px);
       margin: 0;
     }
 
     p {
-      border: 1px solid red;
       font-size: clamp(8px, 1.5vw, 300px);
       text-align: center;
       // padding: 0 clamp(20px, 3vw, 50px);
@@ -96,7 +94,6 @@ export default {
     }
 
     h5 {
-      border: 1px solid gold;
       width: 90%;
       margin: 0 auto;
       padding-top: clamp(8px, 2vw, 20px);
@@ -104,19 +101,28 @@ export default {
     }
 
     ul {
-      border: 1px solid royalblue;
       width: 100%;
       list-style-type: none;
       padding-left: clamp(8px, 2vw, 20px);
 
       li {
-        border: 1px solid aquamarine;
-        line-height: clamp(8px, 1.5vw, 300px);
+        line-height: clamp(8px, 1.5vw, 30px);
         width: 90%;
         margin: 0 auto;
 
         span {
-          font-size: clamp(8px, 1.5vw, 300px);
+          font-size: clamp(8px, 1.5vw, 30px);
+
+          &::before {
+            content: '-';
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            color: var(--custom-white);
+            line-height: clamp(8px, 1.5vw, 30px);
+            font-size: clamp(8px, 1.5vw, 30px);
+            text-align: center;
+          }
         }
       }
     }
