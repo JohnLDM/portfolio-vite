@@ -43,7 +43,7 @@ export default {
 </script>
 
 <template>
-  <footer>
+  <footer id="contacts">
     <div class="cont text-white">
       <div class="row m-0">
         <div class="cont-left col-12 col-lg-7">
