@@ -46,12 +46,15 @@ export default {
   <footer>
     <div class="cont text-white">
       <div class="row m-0">
-        <div class="cont-left col-12 col-md-8">
+        <div class="cont-left col-12 col-lg-7">
           <h2>Contacts</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur illum dicta iure,
-          </p>
+          <ul class="d-flex justify-content-around">
+            <li>Turin</li>
+            <li>•</li>
+            <li>Piedmont</li>
+            <li>•</li>
+            <li>italy</li>
+          </ul>
           <ul class="cont-socials">
             <li v-for="social in socials">
               <a :href="social.link" target="_blank">
@@ -60,12 +63,13 @@ export default {
             </li>
           </ul>
         </div>
-        <div class="cont-right col-12 col-md-4">
+        <div class="cont-right col-12 col-sm-10 col-lg-5 pt-5 pt-lg-4 p-xl-0">
           <!-- copied message -->
-          <span v-if="isCopied"
+          <span v-if="isCopied" class="mt-lg-4 mt-xl-0"
             >{{ copiedElement }} copied
             <i class="fa-regular fa-circle-check"></i
           ></span>
+
           <!-- first btn -->
           <button @click="copyToClipboard('3201498436', 'Phone')">
             <div class="cont-info-btn">
@@ -105,7 +109,7 @@ footer {
       h2 {
         text-transform: uppercase;
         color: var(--custom-white);
-        font-size: clamp(40px, 8vw, 200px);
+        font-size: clamp(40px, 7vw, 200px);
         line-height: clamp(70px, 10vw, 200px);
         font-weight: 800;
         text-align: center;
@@ -136,9 +140,11 @@ footer {
     .cont-right {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: end;
       gap: clamp(20px, 2vw, 50px);
       position: relative;
+      margin: 0 auto;
+      // padding-top: 50px;
 
       span {
         position: absolute;
@@ -175,7 +181,7 @@ footer {
           gap: 10px;
 
           i {
-            font-size: clamp(16px, 3vw, 50px);
+            font-size: clamp(28px, 3vw, 50px);
             // position: absolute;
             // top: 50%;
             // left: 50%;
@@ -183,7 +189,7 @@ footer {
           }
 
           p {
-            font-size: clamp(12px, 0.5vw, 20px);
+            font-size: 60%;
           }
         }
       }
