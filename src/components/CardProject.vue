@@ -115,7 +115,6 @@ export default {
 
           &::before {
             content: '-';
-            height: 15px;
             width: 15px;
             display: inline-block;
             color: var(--custom-white);
