@@ -22,7 +22,6 @@ export default {
     <Slider />
     <About />
     <Projects />
-    <Jumbotron />
   </main>
 </template>
 

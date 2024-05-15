@@ -82,6 +82,7 @@ export default {
       font-weight: 800;
       padding: clamp(8px, 3vw, 20px) 0 clamp(5px, 1.5vw, 20px);
       margin: 0;
+      color: var(--custom-secondary);
     }
 
     p {
