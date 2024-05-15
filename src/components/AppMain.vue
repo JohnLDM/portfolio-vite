@@ -2,6 +2,7 @@
 import Jumbotron from './Jumbotron.vue';
 import Slider from './Carousel.vue';
 import About from './About.vue';
+import Projects from './Projects.vue';
 
 export default {
   name: 'Main',
@@ -10,6 +11,7 @@ export default {
     Jumbotron,
     Slider,
     About,
+    Projects,
   },
 };
 </script>
@@ -19,6 +21,7 @@ export default {
     <Jumbotron />
     <Slider />
     <About />
+    <Projects />
     <Jumbotron />
   </main>
 </template>

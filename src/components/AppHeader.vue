@@ -15,14 +15,14 @@ export default {
       <!-- logo small -->
       <div class="sx d-sm-none">
         <a href="" class="cont-img">
-          <img src="../../public/img/logo/logo-small.png" alt="logo" />
+          <img src="/img/logo/logo-small.png" alt="logo" />
         </a>
       </div>
 
       <!-- logo big -->
       <div class="sx d-none d-sm-block">
         <a href="" class="cont-img">
-          <img src="../../public/img/logo/logo-big.png" alt="logo" />
+          <img src="/img/logo/logo-big.png" alt="logo" />
         </a>
       </div>
 

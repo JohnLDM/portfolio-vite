@@ -46,7 +46,7 @@ export default {
   align-items: center;
   border-radius: 10%;
   background-color: var(--custom-primary);
-  border: 2px solid var(--custom-white);
+  border: 4px solid var(--custom-white);
   color: var(--custom-white);
   margin: clamp(20px, 5vw, 50px);
 
