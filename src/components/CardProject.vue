@@ -76,6 +76,14 @@ export default {
         width: 100%;
         object-fit: contain;
         display: block;
+        transition: filter 0.3s ease;
+        cursor: url('../../public/img/cursor-redirect-64.png'), auto;
+      }
+
+      &:hover {
+        video {
+          filter: brightness(30%);
+        }
       }
     }
   }

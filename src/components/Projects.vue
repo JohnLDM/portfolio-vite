@@ -79,6 +79,7 @@ export default {
 
 #projects {
   background-color: var(--custom-primary);
+  padding-bottom: 50px;
 
   h2 {
     color: var(--custom-white);
