@@ -34,7 +34,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   color: var(--custom-white);
-  padding: clamp(50px, 10vw, 100px);
+  padding: 150px clamp(50px, 10vw, 100px) clamp(50px, 10vw, 100px);
 
   h1 {
     font-size: clamp(70px, 10vw, 200px);

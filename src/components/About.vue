@@ -62,7 +62,7 @@ export default {
     line-height: clamp(70px, 10vw, 200px);
     font-weight: 800;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 100px;
   }
 
   .cont-pic {
