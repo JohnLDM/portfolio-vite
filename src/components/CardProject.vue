@@ -22,6 +22,10 @@ export default {
       type: String,
       required: true,
     },
+    link: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {};
@@ -33,7 +37,7 @@ export default {
 <template>
   <div :class="['custom-card-project d-flex', transition]">
     <div class="carousel">
-      <a href="https://www.youtube.com/">
+      <a :href="link">
         <div class="cont-video">
           <video
             autoplay
@@ -78,7 +82,7 @@ export default {
         object-fit: contain;
         display: block;
         transition: filter 0.3s ease;
-        cursor: url('/img/cursors/cursor-redirect-64.png'), auto;
+        cursor: url('/img/cursors/cursor-redirect-32.png'), auto;
       }
 
       &:hover {

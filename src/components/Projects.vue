@@ -13,6 +13,7 @@ export default {
             'Food delivery web-app. Users can order food and restaurateurs sign up to add dishes to the menu.',
           technologies: ['VueJS', 'Laravel', 'MySQL'],
           transition: 'shiftR',
+          link: 'https://comus-frontoffice.netlify.app',
         },
         {
           videoPath: 'netflix',
@@ -21,6 +22,7 @@ export default {
             'Movie streaming web-app. Allows searching for movies and TV shows via API.',
           technologies: ['HTML', 'CSS', 'Javascript', 'VueJS'],
           transition: 'shiftL',
+          link: 'https://boolflix-js.netlify.app',
         },
         {
           videoPath: 'whatsapp',
@@ -29,6 +31,7 @@ export default {
             'Messaging web-app. Allows you to send and receive predefined messages.',
           technologies: ['HTML', 'CSS', 'Javascript', 'VueJS'],
           transition: 'shiftR',
+          link: 'https://messaging-jq.netlify.app/',
         },
       ],
     };
@@ -50,6 +53,7 @@ export default {
         :description="project.description"
         :technologies="project.technologies"
         :transition="project.transition"
+        :link="project.link"
         :key="index"
       />
     </div>
