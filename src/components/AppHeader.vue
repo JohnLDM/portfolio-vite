@@ -161,6 +161,7 @@ header {
       .offcanvas-top {
         height: 100vh;
         background-color: var(--custom-primary);
+        cursor: url('/img/cursors/circle-32-secondary.png'), auto;
 
         .offcanvas-body {
           ul {
@@ -180,7 +181,7 @@ header {
               font-weight: 800;
               padding: 0;
               position: relative;
-              cursor: pointer;
+              cursor: url('/img/cursors/circle-32-white.png'), auto;
 
               &:hover {
                 color: var(--custom-secondary);

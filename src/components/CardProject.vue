@@ -33,15 +33,16 @@ export default {
 <template>
   <div :class="['custom-card-project d-flex', transition]">
     <div class="carousel">
-      <div class="cont-video">
-        <!-- <video :src="`video/${videoPath}`" :alt="title" /> -->
-        <video
-          autoplay
-          muted
-          loop
-          :src="`../../public/video/${videoPath}.mp4`"
-        ></video>
-      </div>
+      <a href="https://www.youtube.com/">
+        <div class="cont-video">
+          <video
+            autoplay
+            muted
+            loop
+            :src="`../../public/video/${videoPath}.mp4`"
+          ></video>
+        </div>
+      </a>
     </div>
     <div class="cont-info">
       <h3 class="text-center">{{ title }}</h3>
@@ -77,7 +78,7 @@ export default {
         object-fit: contain;
         display: block;
         transition: filter 0.3s ease;
-        cursor: url('../../public/img/cursor-redirect-64.png'), auto;
+        cursor: url('/img/cursors/cursor-redirect-64.png'), auto;
       }
 
       &:hover {
