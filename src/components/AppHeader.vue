@@ -163,10 +163,7 @@ header {
         background-color: var(--custom-primary);
 
         .offcanvas-body {
-          border: 1px solid red;
-
           ul {
-            border: 1px solid green;
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -178,9 +175,16 @@ header {
               text-transform: uppercase;
               background-color: transparent;
               border: none;
-              font-size: clamp(70px, 10vw, 80px);
+              font-size: clamp(50px, 10vw, 80px);
               color: var(--custom-white);
               font-weight: 800;
+              padding: 0;
+              position: relative;
+              cursor: pointer;
+
+              &:hover {
+                color: var(--custom-secondary);
+              }
             }
           }
         }
