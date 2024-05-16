@@ -2,7 +2,7 @@
 export default {
   name: 'CardProject',
   props: {
-    imagePath: {
+    videoPath: {
       type: String,
       required: true,
     },
@@ -32,9 +32,15 @@ export default {
 
 <template>
   <div :class="['custom-card-project d-flex', transition]">
-    <div class="carousel border">
-      <div class="cont-img">
-        <img :src="imagePath" :alt="title" />
+    <div class="carousel">
+      <div class="cont-video">
+        <!-- <video :src="`video/${videoPath}`" :alt="title" /> -->
+        <video
+          autoplay
+          muted
+          loop
+          :src="`../../public/video/${videoPath}.mp4`"
+        ></video>
       </div>
     </div>
     <div class="cont-info">
@@ -54,7 +60,6 @@ export default {
 @use '../assets/scss/style.scss' as *;
 
 .custom-card-project {
-  height: clamp(150px, 30vw, 10000px);
   width: 90%;
   background-color: var(--custom-tertiary);
   color: var(--custom-white);
@@ -62,20 +67,22 @@ export default {
   .carousel {
     width: 60%;
 
-    .cont-img {
+    .cont-video {
       width: 100%;
       height: 100%;
       overflow: hidden;
 
-      img {
+      video {
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
+        display: block;
       }
     }
   }
 
   .cont-info {
     width: 40%;
+    padding-bottom: clamp(8px, 3vw, 20px);
 
     h3 {
       font-size: clamp(12px, 3vw, 40px);
@@ -122,6 +129,7 @@ export default {
             line-height: clamp(8px, 1.5vw, 30px);
             font-size: clamp(8px, 1.5vw, 30px);
             text-align: center;
+            padding-right: clamp(2px, 1vw, 20px);
           }
         }
       }

@@ -7,7 +7,7 @@ export default {
     return {
       projects: [
         {
-          imagePath: 'img/comus/comus',
+          videoPath: 'comus',
           title: 'Comus',
           description:
             'Food delivery web-app. Users can order food and restaurateurs sign up to add dishes to the menu.',
@@ -15,7 +15,7 @@ export default {
           transition: 'shiftR',
         },
         {
-          imagePath: 'path/to/image2.jpg',
+          videoPath: 'netflix',
           title: 'Streaming Web App',
           description:
             'Movie streaming web-app. Allows searching for movies and TV shows via API.',
@@ -23,7 +23,7 @@ export default {
           transition: 'shiftL',
         },
         {
-          imagePath: 'img/comus/comus',
+          videoPath: 'whatsapp',
           title: 'Messaging web-app',
           description:
             'Messaging web-app. Allows you to send and receive predefined messages.',
@@ -45,7 +45,7 @@ export default {
     <div class="cont-projects">
       <CardProject
         v-for="(project, index) in projects"
-        :image-path="project.imagePath"
+        :video-path="project.videoPath"
         :title="project.title"
         :description="project.description"
         :technologies="project.technologies"
