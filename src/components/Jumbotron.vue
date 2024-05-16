@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <section class="jumbotron px-0">
+  <section id="home" class="jumbotron px-0">
     <div class="cont-text text-uppercase">
       <h3 class="text-center">Hello! I'm</h3>
       <h1 class="m-0">
