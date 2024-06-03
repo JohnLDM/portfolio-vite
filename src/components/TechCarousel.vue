@@ -34,7 +34,7 @@ export default {
       <div class="logos-slide">
         <img
           v-for="technology in technologies"
-          :src="`../../public/img/logo/${technology}`"
+          :src="`/img/logo/${technology}`"
           alt="img"
         />
       </div>
