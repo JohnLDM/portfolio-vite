@@ -7,16 +7,12 @@ export default {
       copiedElement: '',
       socials: [
         {
-          icon: 'twitter',
-          link: 'https://www.linkedin.com/in/john-henric-quimson-973827280/',
-        },
-        {
-          icon: 'github',
+          icon: 'square-github',
           link: 'https://github.com/JohnQuimson',
         },
         {
-          icon: 'instagram',
-          link: 'https://www.instagram.com/john_qms/',
+          icon: 'linkedin',
+          link: 'https://www.linkedin.com/in/john-henric-quimson-973827280/',
         },
       ],
     };
@@ -58,7 +54,7 @@ export default {
           <ul class="cont-socials">
             <li v-for="social in socials">
               <a :href="social.link" target="_blank">
-                <i :class="`fa-brands fa-square-${social.icon}`"></i>
+                <i :class="`fa-brands fa-${social.icon}`"></i>
               </a>
             </li>
           </ul>
