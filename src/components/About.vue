@@ -26,7 +26,7 @@ export default {
       <div class="first-row d-flex justify-content-center">
         <!-- picture -->
         <div class="cont-pic">
-          <img src="../assets/images/profile-pic.jpg" alt="profile-picture" />
+          <img src="/public/img/profile-pic.jpg" alt="" />
         </div>
 
         <!-- riga 1 col 2 -->

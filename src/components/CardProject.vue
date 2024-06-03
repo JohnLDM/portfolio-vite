@@ -43,7 +43,7 @@ export default {
             autoplay
             muted
             loop
-            :src="`../../src/assets/videos/${videoPath}.mp4`"
+            :src="`../../public/video/${videoPath}.mp4`"
           ></video>
         </div>
       </a>

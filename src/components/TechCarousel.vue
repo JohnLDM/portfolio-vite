@@ -34,14 +34,14 @@ export default {
       <div class="logos-slide">
         <img
           v-for="technology in technologies"
-          :src="`/src/assets/images/technologies/${technology}`"
+          :src="`../../public/img/technologies/${technology}`"
           alt="img"
         />
       </div>
       <div class="logos-slide">
         <img
           v-for="technology in technologies"
-          :src="`/src/assets/images//technologies/${technology}`"
+          :src="`../../public/img/technologies/${technology}`"
           alt="img"
         />
       </div>
