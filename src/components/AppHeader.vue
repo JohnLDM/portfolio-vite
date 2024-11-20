@@ -78,7 +78,7 @@ export default {
           <!-- offcanvas header -->
           <div class="offcanvas-header">
             <div
-              class="custom-container col-10 col-sm-11 d-flex justify-content-between px-0 align-items-center"
+              class="custom-container col-10 col-sm-11 d-flex justify-content-between px-0 align-items-center "
             >
               <!-- logo small -->
               <div class="sx d-sm-none">
@@ -149,10 +149,12 @@ header {
     color: #f5f5f5;
 
     .sx {
+      height: 100px;
       .cont-img {
-        height: 100px;
+        
 
         img {
+          height: 100%;
         }
       }
     }
